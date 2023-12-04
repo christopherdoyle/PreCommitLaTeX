@@ -1,0 +1,6 @@
+- id: check-weasel-words
+  name: check for weasel words
+  description: todo
+  entry: check-weasel-words
+  language: python
+  types: [tex]
