@@ -1,4 +1,5 @@
 import argparse
+import re
 from pathlib import Path
 from typing import Dict, List, Sequence
 
@@ -8,7 +9,7 @@ from . import DIRECTORY
 def count_occurences(text: str, substrings: List[str]) -> Dict[str, int]:
     result = {}
     for substring in substrings:
-        result[substring] = text.count(substring)
+        result[substring] = len(re.findall(r"\b" + substring + r"\b", text))
     return result
 
 
