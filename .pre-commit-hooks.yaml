@@ -1,6 +1,12 @@
 - id: check-weasel-words
   name: check for weasel words
-  description: todo
+  description: Searches LaTeX code for weasel words.
   entry: check-weasel-words
+  language: python
+  types: [tex]
+- id: chktex
+  name: chktex
+  description: chktex
+  entry: check_chktex
   language: python
   types: [tex]
